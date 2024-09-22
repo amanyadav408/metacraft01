@@ -1,6 +1,7 @@
 ## JavaScript_assigment
-</br>
+
 ## Code
+
 ```javascript
 const NFTs = [];
 
