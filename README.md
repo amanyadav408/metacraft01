@@ -1,5 +1,6 @@
 ## JavaScript_assigment
-##Code
+</br>
+## Code
 ```javascript
 const NFTs = [];
 
@@ -36,7 +37,7 @@ displayNFTs();
 console.log("\nTotal number of NFTs minted: " + getTotalSupply());
 ```
 
-##Author
+## Author
 
 <h3>Created by : <p>Aman Kumar</p></h3>
 
