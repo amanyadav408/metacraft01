@@ -43,5 +43,5 @@ console.log("\nTotal number of NFTs minted: " + getTotalSupply());
 <h3>Created by : <p>Aman Kumar</p></h3>
 
 
-##License
+## License
 <p>This project is licensed under the MIT License.</p>
