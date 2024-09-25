@@ -3,39 +3,38 @@
 ## Code
 
 ```javascript
-const NFTs = [];
+let nftCollection = [];
 
-function createNFT(_carBrand, _carModel, _carYear, _carColor) {
-    const NFT = {
-        carBrand: _carBrand,
-        carModel: _carModel,
-        carYear: _carYear,
-        carColor: _carColor,
+function createNFT(name, semester, result, year) {
+    const nft = {
+        name: name,
+        semester: semester,
+        result: result,
+        year: year
     };
-    NFTs.push(NFT);
+    nftCollection.push(nft);
 }
 
 function displayNFTs() {
-    for (let i = 0; i < NFTs.length; i++) {
-        console.log("\nID: " + (i + 1));
-        console.log("car Brand: " + NFTs[i].carBrand);
-        console.log("car Model: " + NFTs[i].carModel);
-        console.log("car Year: " + NFTs[i].carYear);
-        console.log("car Color: " + NFTs[i].carColor);
-    }
+    nftCollection.forEach((nft, index) => {
+        console.log(`NFT ${index + 1}`);
+        console.log(`Name: ${nft.name}`);
+        console.log(`Semester: ${nft.semester}`);
+        console.log(`Result: ${nft.result}`);
+        console.log(`Year: ${nft.year}`);
+        console.log("----------------------");
+    });
 }
 
 function getTotalSupply() {
-    return NFTs.length;
+    return nftCollection.length;
 }
 
-createNFT("Toyata", "Fortuner", "2015", "Black");
-createNFT("Mercedes-Benz Maybach", "S-Class", "2022", "Blue");
-createNFT("Tesla", "3", "2023", "Red");
+createNFT("Nitish", "2", "Pass", "2022");
+createNFT("Niish kumar", "3", "Fail", "2023");
 
 displayNFTs();
-
-console.log("\nTotal number of NFTs minted: " + getTotalSupply());
+console.log("Total supply: " + getTotalSupply());
 ```
 
 ## Author
