@@ -25,8 +25,8 @@ function getTotalSupply() {
     return nftCollection.length;
 }
 
-createNFT("Nitish", "2", "Pass", "2022");
-createNFT("Niish kumar", "3", "Fail", "2023");
+createNFT("Aman", "2", "Pass", "2022");
+createNFT("Aman kumar", "3", "Fail", "2023");
 
 displayNFTs();
 console.log("Total supply: " + getTotalSupply());
